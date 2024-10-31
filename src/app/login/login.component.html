@@ -1,0 +1,68 @@
+<div class="main shadowhover">
+    <p class="word text-center pt-5" style="font-family:revert; color:black">Login</p>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="form" (ngModelChange)="onFormChange()">
+        <!-- Email Input -->
+        <div class="d-flex justify-content-center">
+            <input 
+                type="email" 
+                class="form-control my-2" 
+                id="logemail" 
+                formControlName="email"
+                placeholder="Type your email" 
+                aria-label="Email"
+                aria-describedby="emailError"
+                [ngClass]="{'is-invalid': loginForm.get('email')?.invalid && loginForm.get('email')?.touched}"
+                style="border: 1px; border-bottom: 1px solid black; border-radius: 0; background-color:white;width:285px; padding-left: 0;">
+        </div>
+        
+        <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" id="emailError" style="color: red; text-align: center;">
+            Please enter a valid email.
+        </div>
+
+        <!-- Password Input -->
+        <div class="d-flex justify-content-center">
+            <input 
+                type="password" 
+                class="form-control my-2" 
+                id="logpassword"  
+                formControlName="password"
+                placeholder="Type your password" 
+                aria-label="Password"
+                aria-describedby="passwordError"
+                [ngClass]="{'is-invalid': loginForm.get('password')?.invalid && loginForm.get('password')?.touched}"
+                style="border: 1px; border-bottom: 1px solid black; border-radius: 0; background-color:white;width:285px; padding-left: 0;">
+        </div>
+
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" id="passwordError" style="color: red; text-align: center;">
+            Password must be at least 6 characters.
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-flex justify-content-center">
+            <button 
+                id="button" 
+                type="submit" 
+                class="btn btn-primary my-3"
+                [disabled]="loginForm.invalid" 
+                style="border:1px; border-radius:38px; width:284px;background-color:rgb(15, 181, 231);color:white">
+                Submit
+            </button>
+        </div>
+
+        <p *ngIf="loginError" class="end d-flex justify-content-center text-decoration-none" style="color: rgb(189, 16, 16);">
+            Invalid email or password
+        </p>
+
+        <!-- Already have an account -->
+        <div style="padding-top: 40px;">
+            <p class="d-flex justify-content-center" style="color:black;">
+                Don't have an account? <a [routerLink]="['/signup']" style="color:rgb(15, 181, 231);margin-left:5px">Sign up</a>
+            </p>
+        </div>
+
+        <!-- End-user policy -->
+        <div style="font-size:14px;">
+            <a href="" class="d-flex justify-content-center" style="color:rgb(5, 5, 5); padding-bottom:10px">End-User policy</a>
+        </div>
+    </form>
+</div>

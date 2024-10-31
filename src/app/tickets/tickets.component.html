@@ -1,0 +1,62 @@
+<div >
+<div class="main shadowhover " style="background-color:white;">
+        <div>
+            <p class="word text-center pt-5"
+                style="font-family:inherit; color:black; font-size: 30px; font-weight: 500; margin-top: 40px;">
+                New Ticket</p>
+        </div>
+        <div class="form">
+            <div class="d-flex justify-content-center">
+                <input type="email" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Email" style="border: 1px;  border-bottom: 1px solid black;
+                    border-radius: 0; background-color:white;width:285px;  padding-left: 0px; width:500px">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input type="text" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Subject" style="border: 1px;  border-bottom: 1px solid black;
+                    border-radius: 0; background-color:white;width:285px;  padding-left: 0px; width:500px">
+            </div>
+        </div>
+        <section>
+            <div class="form-group">
+                <div>
+                    <div class="container">
+                        <div class="toolbar mt-3 d-flex justify-content-between" style="width: 474px; margin-left: 34px;">
+                            <button ng-click="execCommand('bold')"><i class="fas fa-bold"></i></button>
+                            <button ng-click="execCommand('italic')"><i class="fas fa-italic"></i></button>
+                            <button ng-click="execCommand('underline')"><i class="fas fa-underline"></i></button>
+                            <button ng-click="execCommand('justifyLeft')"><i class="fas fa-align-left"></i></button>
+                            <button ng-click="execCommand('justifyCenter')"><i class="fas fa-align-center"></i></button>
+                            <button ng-click="execCommand('justifyRight')"><i class="fas fa-align-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="editor2 form-control" 
+                            contenteditable="true" 
+                            ng-model="formData.description"
+                            style="border: 1px solid black; border-radius: 0; height: 148px; padding: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="my-2">
+            <div class="container" style="margin-left: 22px;">
+                <input style="font-size:13px;" type="file" file-model="myFile" />
+                <!-- <button class="btn btn-secondary" style="height:30px; font-size:11px"
+                    ng-click="uploadFile()">submit file</button> -->
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-3 ">
+            <button id="button" type="button" class="btn btn-primary "
+                style="border:1px; border-radius:0; width:284px;background-color:rgb(15, 181, 231);color:white; margin-bottom:20px;">Create
+                Ticket</button>
+        </div>
+    </div>
+
+
+
+</div>

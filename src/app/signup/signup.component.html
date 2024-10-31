@@ -1,0 +1,65 @@
+<div class="main shadowhover">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <p class="text-center pt-5" style="font-family:inherit; color:black; font-size: 30px; font-weight: 500;">Sign up</p>
+
+        <!-- Email -->
+        <div class="d-flex flex-column justify-content-center mt-3">
+            <input  style="position: relative ;left: 35px;"
+                type="email" 
+                class="form-control" 
+                formControlName="email" 
+                
+                placeholder="Enter your email">
+            <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="invalid-feedback">
+                <small style="position: relative ;left: 35px; " *ngIf="signupForm.get('email')?.errors?.['required']">Email is required.</small>
+                <small style="position: relative ;left: 35px;" *ngIf="signupForm.get('email')?.errors?.['email']">Email must be valid.</small>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="d-flex flex-column justify-content-center mt-3">
+            <input style="position: relative ;left: 35px;"
+                type="password" 
+                class="form-control" 
+                formControlName="password" 
+                placeholder="Enter your password">
+                  <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched" class="invalid-feedback">
+                <small style="position: relative ;left: 35px;" *ngIf="signupForm.get('password')?.errors?.['required']">Password is required.</small>
+            </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="d-flex flex-column justify-content-center mt-3">
+            <input 
+                style="position: relative ;left: 35px;"
+                type="password" 
+                class="form-control" 
+                formControlName="confirmPassword" 
+                placeholder="Confirm Password">
+                <div *ngIf="signupForm.get('confirmPassword')?.invalid && signupForm.get('confirmPassword')?.touched" class="invalid-feedback">
+                <small style="position: relative ;left: 35px;" *ngIf="signupForm.get('confirmPassword')?.errors?.['required']">Confirmation is required.</small>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-flex justify-content-center mt-4">
+            <button 
+                id="button" 
+                type="submit" 
+                class="btn btn-primary" 
+                [disabled]="signupForm.invalid" 
+                style="border-radius: 38px; width: 284px; background-color: rgb(15, 181, 231); color: white;">
+                Submit
+            </button>
+        </div>
+
+        <!-- Login Link -->
+        <div class="d-flex justify-content-center mt-2" style="font-size: 14px;">
+            <p>
+              Already have an account? 
+              <a [routerLink]="['/login']" class="nav-link btn">Log in</a>
+            </p>
+          </div>
+          
+    </form>
+</div>
