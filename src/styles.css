@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/bootstrap/css/bootstrap.min.css';
 body {
+    /* Default styles for logged-out state */
     background:
         radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
         radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
@@ -9,4 +10,13 @@ body {
         radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
     background-blend-mode: screen;
     height: 100vh;
+}
+
+body.logged-in {
+    /* Styles for logged-in state */
+    background-color: #e8e8e8; /* Example: set to white */
+}
+
+body.logged-out {
+    /* You can specify a different background if needed */
 }

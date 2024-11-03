@@ -1,0 +1,73 @@
+.square-border {
+    border: 1px solid;
+    border-radius: 0;
+
+}
+
+.shadowhover {
+    box-shadow: 0px 3px white;
+    transition: all 150ms ease-in-out;
+    border-radius: 8px;
+}
+
+.shadowhover:hover {
+    box-shadow: 0px 8px 28px black;
+}
+
+.requestClicked {
+    margin-top: 300px;
+    transition-delay: 0.10s;
+}
+
+.requestNotClicked {
+    margin-top: 88px;
+}
+
+
+.editor2 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid ;
+    color: black;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar button {
+    margin-right: 5px;
+}
+
+/*extra*/
+
+h2 {
+    margin-top: 0;
+}
+
+.toolbar button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toolbar button:hover {
+    text-decoration: underline;
+}
+
+.editor {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: vertical;
+    overflow: auto;
+    outline: none;
+    background: #fff;
+}
