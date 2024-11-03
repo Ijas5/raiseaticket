@@ -37,6 +37,10 @@ export class RaiseATicketComponent {
     console.log(file);
   }
 
+  execCommand(command: string) {
+    document.execCommand(command, false, undefined);
+  }
+  
   uploadFile() {
     console.log('File uploaded');
   }
