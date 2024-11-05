@@ -1,0 +1,82 @@
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info h2 {
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    margin-bottom: 0;
+}
+
+.timezone-info {
+    margin-bottom: 20px;
+}
+
+.timezone-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timezone-info th,
+.timezone-info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.timezone-info th {
+    background-color: #f2f2f2;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+.btn-group button {
+    margin-right: 5px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+} 
+
+
+
+
+.popup-overlay {
+    position: absolute;
+    width:433px;
+    right: 0;
+    top: 0;
+    background-color:cornflowerblue;
+    border-radius:5px; 
+    position:absolute;
+    margin-top:60px;
+     z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  

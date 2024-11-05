@@ -1,0 +1,39 @@
+<div class="popup-overlay" (click)="closePopup()">
+  <section class="right-align-section py-4" (click)="$event.stopPropagation()">
+          <div class="modal-body">
+              <div class="container">
+                  <div style="position:absolute;right:11px;"><i style="color:black;" class="bi bi-x-circle"
+                           type="button" (click)="closePopup()"></i></div>
+                  <div>
+                      <img style="position:absolute;margin-left:274px;width:auto;height:80px"
+                          src="../../assets/images/yaseen.jpg" alt="">
+                  </div>
+                  <h2 style="color:black">yaseen</h2>
+                  <p style="color:black">yaseen.com</p>
+                  <table class="table">
+                      <tr>
+                          <th>Portal Timezone</th>
+                          <td>(+04:00) Abu Dhabi</td>
+                      </tr>
+                      <tr>
+                          <th>Your Timezone</th>
+                          <td>(+05:30) Chennai</td>
+                      </tr>
+                  </table>
+                  <div class="btn-group">
+                      <button type="button" [routerLink]="['/changepassword']" ui-sref="changePassword"
+                          class="btn btn-secondary"><i class="fas fa-key"></i>
+                          Change
+                          Password</button>
+                      <button type="button" [routerLink]="['/myprofile']" class="btn btn-primary"><i class="fas fa-user"></i> My Profile</button>
+                      <button type="button" [routerLink]="['/']" (click)="logout()"  log class="btn btn-danger"><i class="fas fa-sign-out-alt" ></i> Sign
+                          Out</button>
+                  </div>
+                  <div class="footer" style="color:black">
+                      <a style="color:black" href="#">Privacy Policy</a> | <a style="color:black" href="#">End User
+                          Notice</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>

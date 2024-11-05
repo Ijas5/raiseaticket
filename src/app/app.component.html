@@ -1,2 +1,3 @@
-<app-navbar></app-navbar>
+<app-navbar (toggleProfilePopup)="toggleProfilePopup()"></app-navbar>
 <router-outlet></router-outlet>
+<app-popup-component *ngIf="showProfilePopup" (close)="toggleProfilePopup(false)" (logoutEvent)="handleLogout()"></app-popup-component>

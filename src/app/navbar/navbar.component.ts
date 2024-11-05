@@ -1,7 +1,7 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { AuthService } from '../services/auth.service'; // Adjust the path as needed
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { RouterModule } from '@angular/router'; 
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -13,25 +13,18 @@ import { AuthService } from '../services/auth.service'; // Adjust the path as ne
 export class NavbarComponent implements OnInit {
   isLoggedIn: boolean = false;
 
-  constructor(private authService: AuthService, private renderer: Renderer2) {
+  @Output() toggleProfilePopup = new EventEmitter<void>();
+
+  constructor(private authService: AuthService) {
     this.authService.isLoggedIn$.subscribe(loggedIn => {
       this.isLoggedIn = loggedIn;
-      this.updateBackground();
     });
   }
 
-  ngOnInit() {
-    this.updateBackground();
-  }
+  ngOnInit() {}
 
-  updateBackground() {
-    if (this.isLoggedIn) {
-      this.renderer.addClass(document.body, 'logged-in');
-      this.renderer.removeClass(document.body, 'logged-out');
-    } else {
-      this.renderer.addClass(document.body, 'logged-out');
-      this.renderer.removeClass(document.body, 'logged-in');
-    }
+  openProfilePopup() {
+    this.toggleProfilePopup.emit();
   }
 
   logout() {

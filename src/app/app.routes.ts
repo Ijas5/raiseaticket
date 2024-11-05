@@ -5,7 +5,9 @@ import { TicketsComponent } from './tickets/tickets.component'; // Adjust path a
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {RaiseATicketComponent } from './raise-a-ticket/raise-a-ticket.component';
 import {DashboardticketsComponent} from './dashboardtickets/dashboardtickets.component';
-import {ResourcesComponent} from './resources/resources.component'
+import {ResourcesComponent} from './resources/resources.component';
+import {ChangepasswordComponent} from './changepassword/changepassword.component'
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,5 +17,7 @@ export const routes: Routes = [
   { path: 'raiseaticket', component: RaiseATicketComponent },
   { path: 'Dashboardtickets', component: DashboardticketsComponent },
   { path: 'Resources', component: ResourcesComponent },
+  { path: 'changepassword', component: ChangepasswordComponent },
+  { path: 'myprofile', component: MyprofileComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Default route
 ];

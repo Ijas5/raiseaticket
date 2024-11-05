@@ -1,0 +1,186 @@
+.tickets-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+
+    padding: 20px;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.unresolved {
+    border: 0;
+    background-color: #f4f6f9;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.sorted {
+    border: 0;
+    background-color: #f4f6f9;
+    color: rgb(112, 112, 112);
+    font-size: 15px;
+}
+
+.search {
+    position: relative;
+    left: 320px;
+}
+
+.searchbox {
+    width: 350px;
+    height: 33px;
+    padding: 10px;
+    margin-right: 5px;
+
+}
+
+.sortby {
+    position: relative;
+    right: 180px;
+    margin-top: 15px;
+}
+
+.sort {
+    border: 0;
+    background-color: #f4f6f9;
+    color: rgb(56, 56, 56);
+    font-size: 15px;
+}
+
+.buttons {
+    position: relative;
+    left: 1170px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+
+}
+
+.btn1 {
+    border-radius: 15px;
+    height: 25px;
+    background-color: white;
+    font-size: small;
+    padding: 0px 10px;
+    border: 1px solid rgb(109, 109, 109);
+}
+
+.btn2 {
+    border-radius: 15px;
+    height: 25px;
+    background-color: white;
+    font-size: small;
+    padding: 0px 10px;
+    border: 1px solid rgb(109, 109, 109);
+    color: red;
+}
+
+.tickets-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1315px;
+    height: 160px;
+    background-color: white;
+    box-shadow: 1px 2px 6px #bbbbbb;
+    margin-top: 10px;
+}
+
+.user {
+    font-size: 70px;
+    color: #c8c7c7;
+    position: relative;
+    left: 100px;
+}
+
+.sublist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+.btnopen {
+    position: relative;
+    left: 530px;
+    bottom: 90px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 1px 15px;
+}
+
+.sub {
+    position: relative;
+    bottom: 12px;
+}
+
+.overdue {
+    margin-right: 20px;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.selctpage {
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+}
+
+.pagebuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.pagebtn {
+    margin-top: 30px;
+    padding: 10px;
+    margin-right: 173px;
+}
+
+.pagebtn button {
+    height: 25px;
+    background-color: white;
+    font-size: small;
+    padding: 0px 10px;
+    border: 1px solid rgb(143, 143, 143);
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagebtn button:hover {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.searchicon {
+    border: 1px solid rgb(58, 58, 58);
+    background-color: white;
+    font-size: 20px;
+    padding: 4px 5px;
+    position: relative;
+    top: 1.5px;
+    color: black;
+}

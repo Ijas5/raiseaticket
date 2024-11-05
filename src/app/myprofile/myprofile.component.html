@@ -1,0 +1,141 @@
+<div class="page">
+<h2 class="heading">My Profile</h2>
+<div class="mycontainer">
+    <div class="photo-section">
+        <div class="profile-pic">
+            <img src="../../assets/images/yaseen.jpg" alt="profile photo" >
+        </div>
+        <div class="buttondiv">
+            <button class="button"><i class="bi bi-pencil-fill" style="margin: 10px;"></i>Edit</button>
+            <button class="button " style="margin-left: -7px;"><i class="bi bi-trash3-fill" style="margin-left: -2px; margin-right: 10px;"></i>Remove</button>
+        </div>
+        <div>
+            <button class="btn btn-outline-secondary btn-1">Trusted Browser</button>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-1">My Activities</button>
+        </div>
+    </div>
+    <div class="form-section">
+        <form >
+            <div class="name-section">
+                <div class="first-name">
+                    <label for="firstName">First Name<i class="bi bi-asterisk" style="font-size:6px; color: red; position: relative; top: -7px; left: 5px;"></i></label><br>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="first-name">
+                    <label for="lastName">Last Name<i class="bi bi-asterisk" style="font-size:6px; color: red; position: relative; top: -7px; left: 5px;"></i></label><br>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-input">
+                <label for="mobileNumber" >Mobile</label>
+                <input type="text" class="form-control" id="input" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" >
+            </div>
+            <div class="form-input">
+                <label for="email" >Email<i class="bi bi-asterisk" style="font-size:6px; color: red; position: relative; top: -7px; left: 5px;"></i></label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-input">
+                <label for="timezone">Timezone<i class="bi bi-asterisk" style="font-size:6px; color: red; position: relative; top: -7px; left: 5px;"></i></label>
+                <select name="timezone_offset" class="form-control" id="timezone-offset" class="span5" required>
+                    <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                    <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                    <option value="-10:00">(GMT -10:00) Hawaii</option>
+                    <option value="-09:50">(GMT -9:30) Taiohae</option>
+                    <option value="-09:00">(GMT -9:00) Alaska</option>
+                    <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                    <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                    <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                    <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                    <option value="-04:50">(GMT -4:30) Caracas</option>
+                    <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                    <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                    <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                    <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                    <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                    <option value="+00:00" >(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                    <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                    <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                    <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                    <option value="+03:50">(GMT +3:30) Tehran</option>
+                    <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                    <option value="+04:50">(GMT +4:30) Kabul</option>
+                    <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                    <option value="+05:50" selected="selected">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                    <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                    <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                    <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                    <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                    <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                    <option value="+08:75">(GMT +8:45) Eucla</option>
+                    <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                    <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                    <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                    <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                    <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                    <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                    <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                    <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                    <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                    <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="ticket">Display Ticket Conversation</label>
+                <select name="tickets" class="form-control" id="tickets">
+                    <option value="oldest">Oldest First</option>
+                    <option value="oldest">Latest First</option>
+                </select>
+            </div>
+            <div>
+                <label for="notes">Default Notes Mode</label><br>
+                
+                    <div class="some-class">
+                        <input type="radio" id="public" class="radio form-check-input" name="visibility" />
+                        <label for="public">Public</label>
+                
+                        <input type="radio" id="private" class="form-check-input" name="visibility" />
+                        <label for="private">Private</label>
+                    </div>
+                <br><br>
+                
+            </div>
+            <div>
+                <label for="authentication">Multifactor Authentication <span style="color: rgb(105, 105, 105); font-size-adjust: 0.44;">(Google Authenticator)</span></label><br><br>
+                <label class="toggle">
+                    <input class="toggle-input" type="checkbox"/>
+                    <span class="toggle-label" data-off="OFF" 
+                          data-on="ON">
+                    </span>
+                    <span class="toggle-handle"></span>
+                </label>
+            </div>
+            <br>
+            <br>
+            <div class="sign">
+                <label for="emailSignature">Email Signature</label>
+            </div>
+            <div class="signature">
+                <div class="toolbar mb-3">
+                  <ul class="tool-list">
+                    <li class="tool"><button (click)="execCommand('bold')"><i class="bi bi-type-bold fs-4"></i></button></li>
+                    <li class="tool"><button (click)="execCommand('italic')"><i class="bi bi-type-italic fs-4"></i></button></li>
+                    <li class="tool"><button (click)="execCommand('underline')"><i class="bi bi-type-underline fs-4"></i></button></li>
+                    <li class="tool"><button (click)="execCommand('justifyLeft')"><i class="bi bi-text-left fs-4"></i></button></li>
+                    <li class="tool"><button (click)="execCommand('justifyCenter')"><i class="bi bi-text-center fs-4"></i></button></li>
+                    <li class="tool"><button (click)="execCommand('justifyRight')"><i class="bi bi-text-right fs-4"></i></button></li>
+                  </ul>
+                </div>
+                <div contenteditable="true" class="form-control" style="height: 150px;" #editableDiv></div>
+              </div>
+            <div>
+                <button class="btn btn-primary" style="margin-top: 20px; position: relative; left: 583px;">Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
