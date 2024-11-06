@@ -72,3 +72,12 @@ h2 {
     outline: none;
     background: #fff;
 }
+.page {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #e8e8e8;
+    /* margin: 0; */
+    /* height: auto; */
+    padding: 15px;
+    padding-bottom: 520px;
+}
